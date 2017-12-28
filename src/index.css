@@ -46,6 +46,12 @@ a:active {
   color: #d4380d
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 #main {
   position: relative;
   width: 100%;
@@ -119,4 +125,29 @@ hr.long {
 
 hr.short {
   width: 15%;
+}
+
+nav {
+  margin-top: .85rem;
+  margin-bottom: 1rem;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  border-radius: 1.1rem;
+  border: 1px solid #f8f8f8;
+}
+
+nav li a {
+  display: block;
+  padding: .5rem 1rem;
+  font-size: .9em;
+  font-weight: bold;
+  opacity: .8;
+  color: #f8f8f8;
+}
+
+nav li a:focus {
+  text-decoration: none;
 }
