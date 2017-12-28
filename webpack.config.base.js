@@ -37,23 +37,18 @@ module.exports = {
           limit: 10000,
           name: 'fonts/[name].[hash:7].[ext]'
         }
+      }, {
+        test: /\.html$/,
+        loader: 'html-loader',
+        options: {
+          minimize: true
+        }
       }]
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'index.html',
-      minify: {
-        collapseBooleanAttributes: true,
-        collapseWhitespace: true,
-        keepClosingSlash: true,
-        minifyURLs: true,
-        removeAttributeQuotes: true,
-        removeComments: true,
-        removeEmptyAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        useShortDoctype: true
-      },
+      template: 'index.html'
     })
   ]
 };
