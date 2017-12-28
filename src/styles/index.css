@@ -1,3 +1,5 @@
+@import "icon.css";
+
 * {
   box-sizing: border-box;
 }
@@ -28,12 +30,7 @@ a {
   text-decoration-skip: objects;
 }
 
-a:focus {
-  text-decoration: underline;
-  text-decoration-skip: ink;
-}
-
-a:hover, a:active {
+a:hover, a:active, a:focus {
   outline: 0;
   text-decoration: none;
 }
@@ -72,7 +69,7 @@ ul {
 }
 
 #page1 {
-  background-image: url(imgs/robots.jpg);
+  background-image: url(../assets/imgs/robots.jpg);
 }
 
 .inner {
@@ -108,7 +105,7 @@ ul {
 }
 
 .profile h2 {
-  margin: 0;
+  margin: .625rem 0;
   font-size: .9rem;
   line-height: 1.7rem;
 }
@@ -128,8 +125,7 @@ hr.short {
 }
 
 nav {
-  margin-top: .85rem;
-  margin-bottom: 1rem;
+  margin: 1.5rem 0;
 }
 
 nav li {
@@ -148,6 +144,18 @@ nav li a {
   color: #f8f8f8;
 }
 
-nav li a:focus {
-  text-decoration: none;
+.social {
+  margin: .5rem;
+}
+
+.social li {
+  display: inline-block;
+}
+
+.social li a {
+  display: block;
+  padding: 8px 16px;
+  opacity: .8;
+  color: #f8f8f8;
+  font-size: 1.4rem;
 }
