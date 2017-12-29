@@ -41,7 +41,9 @@ module.exports = {
         test: /\.html$/,
         loader: 'html-loader',
         options: {
-          minimize: true
+          minimize: true,
+          // unable for baidu-site-verification
+          removeAttributeQuotes: false
         }
       }]
   },
