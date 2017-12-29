@@ -3,6 +3,8 @@ const merge = require('webpack-merge');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 const baseWebpackConfig = require('./webpack.config.base');
 
 module.exports = merge(baseWebpackConfig, {
@@ -56,6 +58,11 @@ module.exports = merge(baseWebpackConfig, {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
+    new CopyWebpackPlugin([{
+      context: '../public',
+      from: '*',
+      ignore: ['index.html']
+    }]),
     new webpack.DefinePlugin({
       'process.env': 'production'
     }),
