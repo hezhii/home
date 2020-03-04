@@ -1,16 +1,18 @@
-@import "icon.css";
+@import 'icon.css';
 
 * {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 html {
@@ -25,18 +27,21 @@ html {
 a {
   color: #f8f8f8;
   text-decoration: none;
-  transition: color .3s;
+  transition: color 0.3s;
   outline: none;
   text-decoration-skip: objects;
 }
 
-a:hover, a:active, a:focus {
+a:hover,
+a:active,
+a:focus {
   outline: 0;
   text-decoration: none;
 }
 
-a:hover, a:active {
-  color: #fa541c
+a:hover,
+a:active {
+  color: #fa541c;
 }
 
 ul {
@@ -91,7 +96,7 @@ ul {
   width: 7rem;
   border-radius: 50%;
   border: 2px solid #fa541c;
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3)
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .profile h1 {
@@ -101,15 +106,15 @@ ul {
 }
 
 .profile h2 {
-  margin: .625rem 0;
-  font-size: .9rem;
+  margin: 0.625rem 0;
+  font-size: 0.9rem;
   line-height: 1.7rem;
 }
 
 .profile hr {
   margin: 0.625rem auto;
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, .14);
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 hr.long {
@@ -133,14 +138,14 @@ nav li {
 
 nav li a {
   display: block;
-  padding: .5rem 1rem;
-  font-size: .9em;
+  padding: 0.5rem 1rem;
+  font-size: 0.9em;
   font-weight: bold;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .social {
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .social li {
@@ -150,7 +155,7 @@ nav li a {
 .social li a {
   display: block;
   padding: 8px 16px;
-  opacity: .8;
+  opacity: 0.8;
   font-size: 1.4rem;
 }
 
@@ -158,6 +163,24 @@ nav li a {
   transition: transform 0.3s;
 }
 
-.grow-rotate:active, .grow-rotate:focus, .grow-rotate:hover {
+.grow-rotate:active,
+.grow-rotate:focus,
+.grow-rotate:hover {
   transform: scale(1.2) rotate(5deg);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  color: #bbb;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footer a {
+  color: inherit;
 }
